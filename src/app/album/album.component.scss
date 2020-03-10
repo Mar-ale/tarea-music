@@ -1,0 +1,25 @@
+.album {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  text-align: center;
+  padding: 20px 60px;
+  color: white;
+  font-size: 24px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+.album-div{
+  width: 160px;
+  display:inline-block;
+  margin:10px;
+  vertical-align: top;
+   text-align: center;
+ }
+
+
+ .letras{
+color: #A6A6A6;
+ font-size: 11px;
+ font-family: Verdana, Geneva, sans-serif;
+ }

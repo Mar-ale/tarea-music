@@ -1,0 +1,8 @@
+{
+    "/uss/*": {
+      "target": "https://itunes.apple.com",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }
