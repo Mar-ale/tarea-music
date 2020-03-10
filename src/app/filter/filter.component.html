@@ -1,7 +1,7 @@
 <div class="container fluid">
-   
-    <div *ngFor="let filter of filters">
-        <a href="#" class="btn btn-success">{{ filter }}</a>
-    
+
+    <div class="button" *ngFor="let filter of filters">
+        <button (click)="procesaPropagar(filter)" class="btn btn-success">{{ filter }}</button>
+
     </div>
-  </div>
+</div>

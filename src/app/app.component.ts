@@ -12,6 +12,7 @@ export class AppComponent {
   filter = [];
   contFiltro = [];
   resultFiltro = [];
+  listaFiltrada: any = [];
   evento: string;
 
   constructor(private _api: ApiService) { }
@@ -46,7 +47,18 @@ export class AppComponent {
   procesaPropagar(event) {
     this.evento = event;
     console.log(this.evento);
-    //this.listarAlbumPorCategoria();
+    this.listarAlbum();
+    this.filter = this.listaFiltrada();
+  }
+
+  listarAlbum() {
+    
+    this.filter.forEach( data =>{
+      if (data.category.attributes.label === this.evento){
+        this.listaFiltrada.push(data);
+      }
+    })
+    console.log(this.listaFiltrada);
   }
 
 

@@ -13,9 +13,9 @@ export class FilterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  
+
   }
   procesaPropagar(mensaje) {
-    console.log(mensaje);
+    this.propagar.emit(mensaje);
   }
 }

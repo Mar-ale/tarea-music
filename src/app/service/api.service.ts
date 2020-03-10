@@ -15,10 +15,10 @@ export class ApiService {
 
 
   getAlbum() {
-    return this.http.get(`https://itunes.apple.com/us/rss/topalbums/limit=43/json`);
+    return this.http.get(`https://itunes.apple.com/us/rss/topalbums/limit=42/json`);
   }
   getFilter() {
-    return this.http.get(`https://itunes.apple.com/us/rss/topalbums/limit=43/json`);
+    return this.http.get(`https://itunes.apple.com/us/rss/topalbums/limit=42/json`);
   }
 
 
